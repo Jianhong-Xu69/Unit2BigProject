@@ -12,21 +12,24 @@ Create Private Variables:
     int x2
     int y1
     int y2
+    int px(placeholder x)
+    int py(placeholder y)
     int sx(movement of x)
     int sy(movement of y)
-    int m = sy + "" + sx
+    int m = sy + "/" + sx
     double b = however we find the y intercept
 Constructor LinearEquation to take in (int, int, int, int)
 Transfer inputs into the variables x1, y1, x2, y2
 
-Method to extract the ints from the string?
-Method calculateSlope to calculate the slope
+Method to extract the ints from the string? (returns ints from string)
+Method calculateSlope to calculate the slope (returns a string)
+Method intercept to calculate the y intercept (returns a double)
 
 Use substring?
 x2-x1, y2-y1 for slope of y/x
 I like failed math uhh idk what comes next
-x2 = x2 mod sx, y2 = y2 mod sy?
-x2 = x2 / sx, y2 = y2/ sy?
+px = x2 mod sx, py = y2 mod sy?
+px = px / sx, py = py / sy?
 Some wacky stuff to actually get the slope done I don't know how to do it (UPDATE THIS LATER)
 
 Method toString to call the actual values of the object wrapped in text instead of its memory location
@@ -40,6 +43,7 @@ Make public variables:
     int y2
 Step 1: Ask questions, fill them into the variables using scanner
 Step 2: Fill in the constructor with variables
-
-Step : Call the toString()
+Step 3: Call the calculate method
+Step 4: Call the intercept method
+Step 5: Call the toString()
 Step ???: Profit
