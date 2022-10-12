@@ -20,10 +20,12 @@ Create Private Variables:
     double b = however we find the y intercept
 Constructor LinearEquation to take in (int, int, int, int)
 Transfer inputs into the variables x1, y1, x2, y2
+DONE
 
-Method to extract the ints from the string? (returns ints from string)
-Method CalculateSlope to calculate the slope (returns a string)
-Method Intercept to calculate the y intercept (returns a double)
+Method to extract the ints from the string? (returns ints from string) WIP
+Method CalculateSlope to calculate the slope (returns a string) DONE
+Method Intercept to calculate the y intercept (returns a double) DONE? (NEED TESTING)
+Method Distance to calculate the distance between the 2 points DONE
 
 Use substring?
 x2-x1, y2-y1 for slope of y/x

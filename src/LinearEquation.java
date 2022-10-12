@@ -7,6 +7,7 @@ public class LinearEquation {
     private int py;//placeholder y
     private int sx;//change in x
     private int sy;//change in y
+    private double d;//distance between 2 points
     private int m;//change in y + "/" + change in x
     public LinearEquation(int x1, int y1, int x2, int y2)
     {
@@ -15,18 +16,24 @@ public class LinearEquation {
         this.x2 = x2;
         this.y2 = y2;
     }
-    public String CalculateSlope()
+    public double calculateSlope()
     {
         int changeY = y2 - y1;
         int changeX = x2 - x1;
         sy = changeY;
         sx = changeX;
-        return changeY + "/" + changeX;
+        return (double)changeY / (double)changeX;
     }
-    public double Intercept()
+    public int intercept()
     {
-        px = x2 % sx;
-        py = y2 % sy;
-        return 2.3;
+        px = x2 / sx;
+        py = y2 - (sy * px);
+        return py;
+    }
+    public double distance()
+    {
+        d = Math.pow((x2-x1), 2) + Math.pow((y2-y1), 2);
+        d = Math.sqrt(d);
+        return d;
     }
 }
