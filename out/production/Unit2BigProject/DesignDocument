@@ -22,10 +22,11 @@ Constructor LinearEquation to take in (int, int, int, int)
 Transfer inputs into the variables x1, y1, x2, y2
 DONE
 
-Method to extract the ints from the string? (returns ints from string) WIP
-Method CalculateSlope to calculate the slope (returns a string) DONE
-Method Intercept to calculate the y intercept (returns a double) DONE? (NEED TESTING)
-Method Distance to calculate the distance between the 2 points DONE
+Method to extract the ints from the string? (returns ints from string) DONE, LOADED INTO FrontDoor
+Method calculateSlope to calculate the slope (returns a double) DONE
+Method intercept to calculate the y intercept (returns an int) DONE? (NEED TESTING)
+Method distance to calculate the distance between the 2 points (returns a double) DONE
+Method yValue to calculate the y value of a point with given x value (returns a string) WIP
 
 Use substring?
 x2-x1, y2-y1 for slope of y/x
