@@ -21,8 +21,14 @@ public class LinearEquation {
         sx = changeX;
         return (double)changeY / (double)changeX;
     }
+    public String slopeInterceptForm()
+    {
+        calculateSlope();
+        return "Slope intercept form: y = " + sy + "/" + sx + "+(" + intercept() + ")";
+    }
     public int intercept()
     {
+        calculateSlope();
         int px = x2 / sx;
         int py = y2 - (sy * px);
         return py;
@@ -35,8 +41,18 @@ public class LinearEquation {
     }
     public String yValue(int xVal)
     {
+        calculateSlope();
         double px = (double) xVal / sx; //this holds how many times the change in x was executed
         double yVal = sy * px; //this uses how many times the change in x was executed and applies it on y to get the y value
         return "Solved coordinate point is: (" + xVal + "," + yVal + ")";
+    }
+    public String toString()
+    {
+        String result = "First Pair: (" + x1 + "," + y1 + ")\nSecond Pair: (" + x1 + "," + y1 + ")";
+        result += "\nSlope of line: " + calculateSlope();
+        result += "\nY intercept: " + intercept();
+        result += "\n" + slopeInterceptForm();
+        result += "\nDistance between points: " + distance();
+        return result;
     }
 }
