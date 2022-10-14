@@ -25,11 +25,11 @@ public class LinearEquation {
         calculateSlope();
         return "Slope intercept form: y = (" + sy + "/" + sx + ") + (" + intercept() + ")";
     }
-    public int intercept()//finds and returns the Y intercept of the object
+    public double intercept()//finds and returns the Y intercept of the object
     {
         calculateSlope();
-        int cx = x2 / sx;//cx for change in x
-        return y2 - (sy * cx);
+        double cx = (double)x2 / sx;//cx for change in x
+        return Math.round(y2 - (sy * cx));
     }
     public double distance()//finds and returns the distance between (x1,y1) and (x2,y2)
     {
