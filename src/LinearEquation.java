@@ -42,7 +42,7 @@ public class LinearEquation {
     {
         calculateSlope();
         double px = xVal / sx; //this holds how many times the change in x was executed
-        double yVal = sy * px; //this uses how many times the change in x was executed and applies it on y to get the y value
+        double yVal = (sy * px) + intercept(); //this uses how many times the change in x was executed and applies it on y to get the y value
         return "Solved coordinate point is: (" + xVal + "," + yVal + ")";
     }
     public String toString() //prints the data of the object instead of the memory location

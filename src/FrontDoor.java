@@ -18,7 +18,7 @@ public class FrontDoor {
         int y2 = Integer.parseInt(coord2.substring(extractor2 + 1, extractor3));
         LinearEquation test = new LinearEquation(x1, y1, x2, y2);//creates object
         System.out.println(test);//toString() method allows it to print the value of the object
-        System.out.println("Enter an X integer value on the line to calculate the Y value");
+        System.out.println("Enter an X value on the line to calculate the Y value");
         System.out.println(test.yValue(input.nextDouble()));
     }
 }
