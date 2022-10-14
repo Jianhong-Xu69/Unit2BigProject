@@ -39,7 +39,7 @@ Make public variables: DONE
     int x2
     int y1
     int y2
-Step 1: Ask questions, fill them into the variables using scanner DONE
+Step 1: Ask questions, fill them into the variables using scanner DONE (Thanks Anson)
 Step 2: Fill in the constructor with variables DONE
 Step 3: Call the calculate method UNNECESSARY
 Step 4: Call the intercept method UNNECESSARY
